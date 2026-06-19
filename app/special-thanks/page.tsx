@@ -4,8 +4,10 @@ import styles from "../styles/Home.module.css";
 import Card from "../Card";
 import { WebGLShader } from "@/components/ui/web-gl-shader";
 import { LiquidButton } from "@/components/ui/liquid-glass-button";
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
+    const router = useRouter();
   return (
     <div className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
       <WebGLShader />
@@ -16,21 +18,21 @@ export default function HomePage() {
           <LiquidButton
             size="sm"
             className="text-white"
-            onClick={() => window.location.assign("/")}
+            onClick={() => router.push("/")}
           >
             Home
           </LiquidButton>
           <LiquidButton
             size="sm"
             className="text-white"
-            onClick={() => window.location.assign("/about")}
+            onClick={() => router.push("/about")}
           >
             About
           </LiquidButton>
           <LiquidButton
             size="sm"
             className="text-white"
-            onClick={() => window.location.assign("/project")}
+            onClick={() => router.push("/project")}
           >
             Project
           </LiquidButton>
@@ -38,7 +40,7 @@ export default function HomePage() {
            <LiquidButton
             size="sm"
             className="text-white"
-            onClick={() => window.location.assign("/special-thanks")}
+            onClick={() => router.push("/special-thanks")}
           >
             Special Thanks
           </LiquidButton>
