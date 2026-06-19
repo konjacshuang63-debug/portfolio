@@ -55,11 +55,11 @@ export default function HomePage() {
           </div>
           <p className={styles.subtitle}>This is the project page of my portfolio website. Here you can find information about my projects.</p>
           <br />
-          <Image src="/images/project-removebg-preview.png" alt="Portfolio Image" width={600} height={425} className={styles.projectlogo} />
+          <Image src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/project-removebg-preview.png`} alt="Portfolio Image" width={600} height={425} className={styles.projectlogo} />
           <p className={styles.mystuff}>Feel free to explore my projects and learn more about me. I am always open to new opportunities and collaborations, so don't hesitate to reach out if you have any questions or would like to work together!</p>
           <br />
           <p className={styles.projectview}>View the cards below to see my projects</p>
-          <img   src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/arrow.png`} alt="Portfolio Image" width={600} height={425} className={styles.logo} />
+          <img src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/arrow.png`} alt="Portfolio Image" width={600} height={425} className={styles.logo} />
             <br>
             
             

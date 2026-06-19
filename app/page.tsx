@@ -54,7 +54,7 @@ export default function HomePage() {
           </div>
           <p className={styles.subtitle}>This is the home page of my portfolio website. Here you can find information about me and my projects.</p>
           <br />
-          <Image src="/images/newhouse-removebg-preview.png" alt="Portfolio Image" width={600} height={425} className={styles.kogane} />
+          <Image src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/newhouse-removebg-preview.png`} alt="Portfolio Image" width={600} height={425} className={styles.kogane} />
           <p className={styles.mystuff}>Feel free to explore my projects and learn more about me. I am always open to new opportunities and collaborations, so don't hesitate to reach out if you have any questions or would like to work together!</p>
           <br />
           <br />

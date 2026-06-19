@@ -53,7 +53,7 @@ export default function HomePage() {
           </div>
           <p className={styles.subtitle}>I am a software engineer with a passion for creating innovative solutions.</p>
           <br />
-          <Image src="/images/ME!.jpg" alt="Portfolio Image" width={600} height={425} className={styles.me} />
+          <Image src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/ME!.jpg`} alt="Portfolio Image" width={600} height={425} className={styles.me} />
           <br />
           <p className={styles.mystuff2}>As a software developer, I enjoy building websites that are both functional and visually appealing. Web development allows me to combine creativity with problem-solving, creating digital experiences that people can easily access and use. Through designing layouts, writing code, and testing features, I have learned how different parts of a website work together to provide a smooth user experience.
 
