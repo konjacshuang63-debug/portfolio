@@ -54,7 +54,7 @@ export default function HomePage() {
           <br />
         
 <div className={styles['emani1']}>
-      <img src="/images/eshaan is LOCKED.png" alt="Eshaan Emani" className={styles['card-image']} />
+      <img src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/eshaan is LOCKED.png`} alt="Eshaan Emani" className={styles['card-image']} />
       <h2 className={styles['card-title']}>Eshaan Emani</h2>
       <p className={styles['card-description']}>
         Eshaan Emani is a young entrepreneur, technologist, and community leader from Sammamish, Washington. He has earned certifications from Google and Cisco, reached the Gold division of the USA Computing Olympiad (USACO), and won the BExSTEM Challenge by creating VaultGuard, an AI-powered cybersecurity platform. He has also earned the Gold level of the President's Volunteer Service Award for over 250 hours of STEM volunteer work and has excelled in DECA and Model United Nations competitions. Through his achievements in technology, entrepreneurship, leadership, and community service, Eshaan demonstrates strong potential as a future innovator and leader.

@@ -60,7 +60,7 @@ export default function HomePage() {
           <br />
           <br />
           <p className={styles.info}>Contact Information: Email: lilbro33@gmail.com, Phone Number: + 1425-560-5454</p>
-          <img src="/images/mappuy2.png" alt="Portfolio Image" width={600} height={425} className={styles.logo} />
+          <img src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/images/mappuy2.png`} alt="Portfolio Image" width={600} height={425} className={styles.logo} />
 
           <div className={styles.gridcard}>
             <Card
